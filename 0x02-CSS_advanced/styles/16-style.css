@@ -1,0 +1,226 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Normalize.css Rules */
+
+/* Universal box-sizing rule */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    /* Correct the line height in all browsers */
+    -webkit-text-size-adjust: 100%;
+    /* Prevent adjustments of font size in iOS */
+}
+
+body {
+    margin: 0;
+    /* Remove default margin */
+    color: var(--text-color);
+    /* Your custom text color */
+    font-family: var(--font-family-base);
+    /* Your custom font family */
+    font-size: var(--font-size-medium);
+    /* Your custom font size */
+    font-weight: var(--font-weight-regular);
+    /* Your custom font weight */
+    line-height: var(--line-height-base);
+    /* Your custom line height */
+}
+
+main {
+    display: block;
+    /* Render the main element consistently */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-title);
+    /* Your custom font family for titles */
+    font-weight: var(--font-weight-bold);
+    /* Your custom bold weight */
+}
+
+h1 {
+    font-size: 2em;
+    /* Correct font size in section and article contexts */
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    /* Correct box sizing in Firefox */
+    height: 0;
+    overflow: visible;
+    /* Show overflow in Edge and IE */
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* Correct font family for code elements */
+    font-size: 1em;
+    /* Correct the odd font sizing */
+}
+
+b,
+strong {
+    font-weight: bolder;
+    /* Correct the font weight */
+}
+
+small {
+    font-size: 80%;
+    /* Add correct font size for small text */
+}
+
+sub,
+sup {
+    font-size: 75%;
+    /* Prevent sub and sup from affecting line height */
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+a {
+    background-color: transparent;
+    /* Remove gray background in IE 10 */
+    color: var(--text-color);
+    /* Your custom link color */
+    text-decoration: none;
+    /* Your custom link style */
+}
+
+a:visited {
+    font-style: italic;
+    /* Your custom visited link style */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Your custom hover link style */
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+    /* Your custom active link style */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* Correct font inheritance */
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    /* Remove default margin */
+}
+
+button,
+input {
+    overflow: visible;
+    /* Show overflow in IE */
+}
+
+button,
+select {
+    text-transform: none;
+    /* Remove text transform inheritance */
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    /* Correct button appearance */
+}
+
+/* Your Custom Styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* Base font size for rem units */
+}
+
+.visually-hidden {
+    display: none;
+    /* Hide visually but keep accessible */
+}
+
+.section-header {
+    text-align: var(--section-header-align);
+    /* Center align section headers */
+}
+
+.card-category {
+    color: var(--color-primary);
+    /* Color for category cards */
+}
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Root Variables */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
