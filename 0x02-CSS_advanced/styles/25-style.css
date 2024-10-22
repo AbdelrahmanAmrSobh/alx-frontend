@@ -125,7 +125,7 @@ a:active {
 }
 
 .button {
-    display: var(--button-diplay);
+    display: var(--button-display);
     padding: var(--button-padding);
     border-style: var(--button-border);
     font-size: var(--button-font-size);
@@ -268,7 +268,7 @@ html {
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
     --section-tagline-margin: 0;
-    --button-diplay: inline-block;
+    --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: 0.2rem solid var(--color-primary);
     --button-color: var(--color-black);
